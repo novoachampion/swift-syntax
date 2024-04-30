@@ -33,7 +33,9 @@ let package = Package(
     .target(
       name: "_SwiftSyntaxCShims"
     ),
-
+dependencies: [
+  .package(url: "https://github.com/apple/swift-syntax.git", from: "0.509.0"),
+],
     .target(
       name: "_InstructionCounter"
     ),
